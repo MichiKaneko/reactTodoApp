@@ -1,79 +1,68 @@
+.App {
+  width: 100%;
+  height: 100vh;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Roboto Condensed', sans-serif;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(to bottom, rgb(231, 157, 238),rgb(135, 233, 126));
+.Sidebar {
+  height: 100%;
+  width: 250px;
+  background: #2d445d;
 }
 
-header {
-  text-align: center;
-  width: 80vw;
-  margin: 2rem auto;
-  padding: 2rem ;
- }
-
-.inputForm {
-  width: 80vh;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
+.SidebarList {
+  height: auto;
+  padding: 0;
+  width: 100%;
 }
 
-.inputForm input {
-  width: 15rem;
-  height: 1.7rem;
-  padding: 0.5rem;
-  border: none;
-}
-
-.inputForm button {
-  padding: 0.38rem 0.5rem;
-  background: rgb(243, 240, 84);
-}
-
-.todoList {
-  width: 100vw;
-  margin: 2rem auto;
-}
-
-.todo {
-  margin: 0.4rem;
+.SidebarList .row {
+  width: 100%;
+  height: 60px;
+  /* background-color: cadetblue; */
+  /* border: 1px solid black; */
   display: flex;
-  align-items: center;
+  color: white;
   justify-content: center;
+  align-items: center;
 }
 
-.completed {
-  text-decoration: line-through;
-  opacity: 0.5;
+.SidebarList .row:hover {
+  cursor: pointer;
+  background-color: #3b627a;
 }
 
-
-.icons .fa-check {
-  padding: 0.487rem .5rem;
-  background: rgb(83, 164, 195);
+.SidebarList #active {
+  background-color: #3b627a;
 }
 
-.icons .fa-trash {
-  padding: 0.487rem .5rem;
-  background: rgb(197, 70, 81);
+.row #icon {
+  flex: 30%;
+  display: grid;
+  place-items: center;
 }
 
-.todoText {
-  min-width: 15rem;
-  max-height: 1.8rem;
-  padding: 0.3rem 4rem;
-  background: white;
+.row #title {
+  flex: 70%;
 }
 
+.SidebarIcon {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+}
 
-button {
-  border: none;
+.SidebarIcon img {
+  width: 100px;
+}
+
+.SidebarIcon p {
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
 }
