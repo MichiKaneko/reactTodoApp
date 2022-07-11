@@ -12,7 +12,7 @@ export default function Menubar() {
             }}>
               <div id='icon'>{value.icon}</div>
             </li>
-          )
+          );
         })}
       </ul>
     </div>

@@ -1,6 +1,9 @@
 import React from "react";
 import HomeIcon from "@mui/icons-material/Home";
-import AttachEmailIcon from "@mui/icons-material/AttachEmail";
+import CategoryIcon from '@mui/icons-material/Category';
+import FolderSharedIcon from '@mui/icons-material/FolderShared';
+import CampaignIcon from '@mui/icons-material/Campaign';
+import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
 import AssessmentIcon from "@mui/icons-material/Assessment";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import AddCardIcon from "@mui/icons-material/AddCard";
@@ -15,27 +18,27 @@ export const MenubarData = [
   },
   {
     title: "Products",
-    icon: <HomeIcon />,
+    icon: <CategoryIcon />,
     link: "/products",
   },
   {
     title: "Clients",
-    icon: <HomeIcon />,
+    icon: <FolderSharedIcon />,
     link: "/clients",
   },
   {
     title: "Campaigns",
-    icon: <HomeIcon />,
+    icon: <CampaignIcon />,
     link: "/campaigns",
   },
   {
     title: "Manegers",
-    icon: <HomeIcon />,
+    icon: <ManageAccountsIcon />,
     link: "/manegers",
   },
   {
     title: "Settings",
-    icon: <HomeIcon />,
-    link: "/manegers",
+    icon: <SettingsIcon />,
+    link: "/settings",
   },
 ];
